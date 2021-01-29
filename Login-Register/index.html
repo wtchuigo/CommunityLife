@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <input type="text" id="username" placeholder="Choose Username">
+			<input type="password" id="password" placeholder="Choose Password">
+			<button type="button" onclick="getUser()">Log in</button>            
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="text" id="email" placeholder="Enter Email">
+            <input type="password" id="password" placeholder="Choose Password">
+			<input type="password" id="password" placeholder="Choose Password">
+            <button id="btn">Save</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <div id="msg">
+        <pre></pre>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
